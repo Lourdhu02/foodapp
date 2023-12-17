@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  color: #1c1d21;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-arrow {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar-title {
+  font-size: 20px;
+}
+
+.order-content {
+  text-align: center;
+  margin: 20px;
+  justify-content: center;
+  display: grid;
+}
+
+.food-item {
+  padding: 10px;
+  margin: 10px;
+  width: 400px;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  display: flex;
+}
+.imgbox {
+  width: 75px;
+}
+.imgbox img {
+  width: 75px;
+}
+
+.bill {
+  margin: 20px 0;
+}
+.price {
+  color: #f77f00;
+}
+
+.confirm-payment-button {
+  background-color: #f77f00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 30px;
+}
+
+.confirm-payment-button:hover {
+  background-color: #ffffff;
+  color: #f77f00;
+  border: 1px solid #f77f00;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 600px) {
+  .food-item {
+    width: 250px;
+  }
+}

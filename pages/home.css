@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  color: #1c1d21;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.menu-icon:hover {
+  scale: 1.2;
+  transition: all 0.5;
+}
+
+.basket-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.basket-icon:hover {
+  scale: 1.2;
+  transition: all 0.5s;
+}
+.basket-icon a {
+  text-decoration: none;
+  color: #1c1d21;
+}
+span {
+  background-color: #f77f00;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 50%;
+}
+
+.brand {
+  font-size: 24px;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: #f77f00;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+.menu a:hover {
+  color: #1c1d21;
+}
+.menu-icon {
+  display: block;
+}
+
+.menu.show {
+  display: flex;
+}
+.homeHead {
+  font-size: 36px;
+  color: #1c1d21;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0px;
+}
+.search-container input {
+  width: 300px;
+  padding: 10px;
+  color: #1c1d21;
+  border-radius: 30px;
+  border: 1.2px solid #f77f00;
+  outline: none;
+}
+.foodnavbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.foodnavbar ul li {
+  list-style: none;
+}
+.foodnavbar ul li a {
+  text-decoration: none;
+  color: #1c1d21;
+}
+.foodnavbar ul li a:hover {
+  color: #f77f00;
+  border-bottom: 1.2px solid #f77f00;
+  transition: all 0.5s;
+}
+
+.fooditems-container {
+  display: grid;
+  justify-content: center;
+}
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.card {
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  border: 0.8px solid #1c1d21;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.card:hover {
+  scale: 1.1;
+  transition: all 0.5s;
+}
+
+.imgbox {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.imgbox img {
+  width: 200px;
+  height: 150px;
+}
+
+.content {
+  padding: 5px;
+  text-align: center;
+}
+
+.price {
+  font-weight: bold;
+  margin: 10px 0px;
+  color: #f77f00;
+}
+
+.order-button {
+  color: #1c1d21;
+  background-color: #f77f00;
+  border: none;
+  padding: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+.order-button:hover {
+  background-color: #1c1d21;
+  color: #ffffff;
+}
+#prevButton,
+#nextButton {
+  margin: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+
+  color: #f77f00;
+  font-size: 18px;
+}
+.navarrows {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: gray;
+  height: 60px;
+  width: 500px;
+  position: fixed;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+.footer-icon a {
+  color: gray;
+  text-decoration: none;
+}
+
+.footer-icon a:hover {
+  color: #f77f00;
+  scale: 1.2;
+  transition: all 0.5s;
+}
+.footer-icon:hover {
+  scale: 1.2;
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .homeHead {
+    font-size: 50px;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .card {
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border: 0.8px solid #1c1d21;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    overflow: hidden;
+    scroll-snap-align: center;
+  }
+
+  .menu-icon:hover,
+  .basket-icon:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+  }
+
+  .search-container input {
+    width: 80%;
+  }
+
+  .foodnavbar ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .foodnavbar ul li a {
+    margin-right: 5px;
+    margin-left: 0px;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}

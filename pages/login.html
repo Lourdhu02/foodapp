@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>FoodApp</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="loginPage">
+      <div class="navBar">
+        <div class="cheficon">
+          <img src="../assets/chef logo.png" width="200" alt="" />
+        </div>
+        <div class="links">
+          <div>
+            <a href="./login.html" style="color: #f77f00">Login</a>
+          </div>
+          <div><a href="./signup.html">Sign Up</a></div>
+        </div>
+      </div>
+      <div class="loginForm">
+        <div class="inputFields">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" />
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+          <a href="">forgot password ?</a>
+          <button id="login">Login</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.getElementById("login").addEventListener("click", function () {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        if (!email || !password) {
+          alert("Please fill in all fields before login.");
+        } else {
+          document
+            .getElementById("login")
+            .addEventListener("click", function () {
+              window.location.href = "./home.html";
+            });
+        }
+      });
+    </script>
+  </body>
+</html>

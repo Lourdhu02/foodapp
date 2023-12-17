@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="orders.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>FoodApp</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="back-arrow" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <div class="navbar-title">Orders</div>
+    </div>
+
+    <div class="order-content">
+      <div class="food-item">
+        <div class="imgbox"><img src="../assets/kadai.png" alt="" /></div>
+        <div class="content">Kadai Chicken</div>
+        <div class="price">$49</div>
+      </div>
+      <div class="food-item">
+        <div class="imgbox"><img src="../assets/gulab.png" alt="" /></div>
+        <div class="content">Gulab Jam</div>
+        <div class="price">$9</div>
+      </div>
+      <div class="food-item">
+        <div class="imgbox"><img src="../assets/pavbaji.png" alt="" /></div>
+        <div class="content">Pavbaji</div>
+        <div class="price">$49</div>
+      </div>
+      <div class="bill">Total Bill: $107.99</div>
+      <button class="confirm-payment-button" id="payment">
+        Confirm Payment
+      </button>
+    </div>
+
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+      document.getElementById("payment").addEventListener("click", function () {
+        window.location.href = "./payment.html";
+      });
+    </script>
+  </body>
+</html>

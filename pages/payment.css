@@ -1,0 +1,50 @@
+.navbar {
+  color: #1c1d21;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.payment-content {
+  text-align: center;
+  margin: 20px;
+  display: grid;
+  justify-content: center;
+}
+
+.payment-method {
+  margin: 10px;
+  padding: 20px;
+  width: 400px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.payment-method:hover {
+  background-color: #f77f00;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+.proceed-button {
+  background-color: #f77f00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 30px;
+}
+
+.proceed-button:hover {
+  background-color: #ffffff;
+  color: #f77f00;
+  border: 1px solid #f77f00;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 600px) {
+  .payment-method {
+    width: 250px;
+  }
+}

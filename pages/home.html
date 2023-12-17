@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <title>FoodApp</title>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="menu-icon" id="menuIcon">&#9776;</div>
+      <div class="basket-icon">
+        <a href="./orders.html">&#128722;<span id="cartCount">0</span></a></a>
+      </div>
+    </div>
+
+    <div class="menu" id="mobileMenu">
+      <a href="./profile.html">Profile</a>
+      <a href="./orders.html">orders</a>
+      <a href="contact.html">contact</a>
+      <a href="#">offer and promo</a>
+      <a href="#">privacy and policy</a>
+      
+      <a href="../index.html">Sign Out</a>
+    </div>
+    <div class="homeHead">Delicious food for you</div>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="search" />
+    </div>
+    <div>
+      <nav class="foodnavbar">
+        <ul>
+          <li><a href="#" style="color: #f77f00;">Foods</a></li>
+          <li><a href="#">Drinks</a></li>
+          <li><a href="#">Snacks</a></li>
+          <li><a href="#">Starters</a></li>
+          <li><a href="#">Main Courses</a></li>
+          <li><a href="#">Desserts</a></li>
+          <li><a href="#">Specials</a></li>
+          <li><a href="#">Curries</a></li>
+          <li><a href="#">Chinese</a></li>
+          <li><a href="#">Italian</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="fooditems-container">
+      <div class="card-container" id="cardContainer">
+        <div class="card">
+          <div class="imgbox">
+            <img src="../assets/65.png" alt="" srcset="" />
+          </div>
+          <div class="content">Chicken 999</div>
+          <div class="price">$39</div>
+          <button class="order-button">Add to cart</button>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="../assets/biriyani.png" alt="" /></div>
+          <div class="content">Biriyani</div>
+          <div class="price">$29</div>
+          <button class="order-button">Add to cart</button>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="../assets/roti.png" alt="" /></div>
+          <div class="content">Roti</div>
+          <div class="price">$7</div>
+          <button class="order-button">Add to cart</button>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="../assets/noodles.png" alt="" /></div>
+          <div class="content">Noodles</div>
+          <div class="price">$19</div>
+          <button class="order-button">Add to cart</button>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="../assets//gulab.png" alt="" /></div>
+          <div class="content">Gulab Jam</div>
+          <div class="price">$9</div>
+          <button class="order-button">Add to cart</button>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="../assets//samosa.png" alt="" /></div>
+          <div class="content">Samosa</div>
+          <div class="price">$14</div>
+          <button class="order-button">Add to cart</button>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="../assets/pavbaji.png" alt="" /></div>
+          <div class="content">Pavbaji</div>
+          <div class="price">$49</div>
+          <button class="order-button">Add to cart</button>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="../assets/vegrice.png" alt="" /></div>
+          <div class="content">Veg Rice</div>
+          <div class="price">$25</div>
+          <button class="order-button">Add to cart</button>
+        </div>
+        <div class="card">
+          <div class="imgbox"><img src="../assets/kadai.png" alt="" /></div>
+          <div class="content">Kadai Chicken</div>
+          <div class="price">$49</div>
+          <button class="order-button">Add to cart</button>
+        </div>
+      </div>
+      <div class="navarrows">
+        <button id="prevButton"><i class="fas fa-chevron-left"></i></button>
+        <button id="nextButton"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-icon" style="color: #f77f00">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="footer-icon">
+        <a href="./favourite.html"><i class="fas fa-heart"></i></a>
+      </div>
+      <div class="footer-icon">
+        <a href="./profile.html"><i class="fas fa-user"></i></a>
+      </div>
+      <div class="footer-icon">
+        <a href="./history.html"><i class="fas fa-history"></i></a>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/your-font-awesome-kit-id.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="home.js"></script>
+  </body>
+</html>

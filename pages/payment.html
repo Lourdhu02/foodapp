@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <title>FoodApp</title>
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="back-arrow" onclick="goBack()">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <div class="navbar-title">Payment</div>
+    </div>
+
+    <div class="payment-content">
+      <h2>Select Payment Method</h2>
+
+      <div class="payment-method" id="creditCard">
+        <input type="checkbox" />
+        <i class="far fa-credit-card"></i>
+        <span>Credit Card</span>
+      </div>
+
+      <div class="payment-method" id="paypal">
+        <input type="checkbox" />
+        <i class="fab fa-paypal"></i>
+        <span>PayPal</span>
+      </div>
+
+      <div class="payment-method" id="bitcoin">
+        <input type="checkbox" />
+        <i class="fab fa-bitcoin"></i>
+        <span>Bitcoin</span>
+      </div>
+
+      <button class="proceed-button" id="proceedButton">
+        Proceed to payment
+      </button>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/your-font-awesome-kit-id.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+      const proceedButton = document.getElementById("proceedButton");
+
+      if (proceedButton) {
+        proceedButton.addEventListener("click", () => {
+          alert("Order successfully placed!");
+          window.location.href = "./home.html";
+        });
+      }
+    </script>
+  </body>
+</html>

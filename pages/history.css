@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  color: #1c1d21;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-arrow {
+  font-size: 20px;
+  cursor: pointer;
+}
+.back-arrow:hover {
+  color: #f77f00;
+  scale: 1.2;
+  transition: all 0.5s;
+}
+
+.navbar-title {
+  font-size: 20px;
+}
+
+.history-content {
+  text-align: center;
+  margin: 20px;
+}
+
+.history-icon {
+  font-size: 150px;
+  margin-bottom: 20px;
+}
+
+.start-order-button {
+  background-color: #f77f00;
+  color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #f77f00;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.start-order-button:hover {
+  background-color: #fff;
+  border: 1.2px solid #f77f00;
+  color: #f77f00;
+  transition: all 0.5s;
+}

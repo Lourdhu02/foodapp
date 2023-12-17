@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("./assets/intro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Raleway", sans-serif;
+}
+.introPage {
+  display: flex;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #1c1d21;
+}
+.logo img {
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.getLink {
+  margin: 10px 0px;
+}
+.getLink a {
+  text-decoration: none;
+  background-color: white;
+  color: #f77f00;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 20px;
+}
+.getLink a:hover {
+  background-color: #f77f00;
+  color: #ffffff;
+  transition: all 0.5s;
+}

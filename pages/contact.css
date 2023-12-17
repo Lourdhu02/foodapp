@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  color: #1c1d21;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.back-arrow {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.navbar-title {
+  font-size: 20px;
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+.info {
+  width: 400px;
+  display: grid;
+  padding: 50px;
+}
+.info label {
+  margin-top: 10px;
+}
+.info input {
+  border: 1px solid #f77f00;
+  height: 40px;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.info textarea {
+  border: 1px solid #f77f00;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.social-icons {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+}
+.social-icons a {
+  text-decoration: none;
+  color: #1c1d21;
+  margin: 0px 10px;
+}
+.social-icons a:hover {
+  color: #f77f00;
+  scale: 1.1;
+  transition: all 0.5s;
+}
+.send-button {
+  background-color: #f77f00;
+  border: none;
+  padding: 10px;
+  margin-top: 25px;
+  border-radius: 30px;
+  color: white;
+}
+.send-button:hover {
+  color: #f77f00;
+  background-color: #ffffff;
+  border: 1px solid #f77f00;
+  transition: all 0.5s;
+}
